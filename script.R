@@ -38,3 +38,8 @@ n30m5000 <- mad_calc(30,5000)
 n100m5000 <- mad_calc(100,5000)
 
 # put results in a table
+results <- matrix(c(n30m500,n100m500,n30m5000,n100m5000), ncol=2, byrow=TRUE)
+colnames(results) <- c("n=30","n=100")
+rownames(results) <- c("m=500", "m=5000")
+
+results
